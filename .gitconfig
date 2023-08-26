@@ -1,0 +1,7 @@
+[user]
+	name = Khaled Waleed
+	email = foxilated@gmail.com
+[credential]
+	helper = store
+[alias]
+	autoadd = !git add -A && git status
