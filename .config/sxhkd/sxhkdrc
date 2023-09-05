@@ -1,21 +1,24 @@
 ## GLOBAL ##
+# Switch input language
 super + space
     ~/stuff/scripts/toggle-layout.sh
-
-
+## Menus ##
+# Finds repos and opens them in code
+super + c
+    ~/stuff/scripts/open-dir-in-code.sh
 ## PROGRAMS ##
 # Launch st
 ctrl + shift + Return
     SHELL=/bin/fish st
 
 # Launch firefox
-ctrl + shift + f
+ctrl + shift + b
     firefox
 
 # Launch dmenu
 ctrl + shift + space
-    dmenu_run -fn 'JetBrainsMono Nerd Font:size=16'
-
+    dmenu_run
+
 # Launch flameshot
 ctrl + shift + plus
     flameshot gui
@@ -32,17 +35,13 @@ ctrl + shift + 0
 super + l
     slock
 
-# Restart DWM
-super + shift + r
-    pkill dwm && startx
-
 # Volume controls
 XF86AudioLowerVolume
-    amixer -q sset Master 5%-
+    amixer -q sset Master --card=1 5%-
 
 XF86AudioRaiseVolume
-    amixer -q sset Master 5%+
+    amixer -q sset Master --card=1 5%+
 
 XF86AudioMute
-    amixer -q sset Master toggle
+    amixer -q sset Master --card=1 toggle
 
