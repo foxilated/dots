@@ -1,11 +1,8 @@
-## GLOBAL ##
-# Switch input language
-super + space
-    ~/stuff/scripts/toggle-layout.sh
 ## Menus ##
 # Finds repos and opens them in code
 super + c
     ~/stuff/scripts/open-dir-in-code.sh
+
 ## PROGRAMS ##
 # Launch st
 ctrl + shift + Return
@@ -19,8 +16,12 @@ ctrl + shift + b
 ctrl + shift + space
     dmenu_run
 
-# Launch flameshot
+# screenshot a region to clipboard
 ctrl + shift + plus
+    mkdir -p ~/screenshots && maim -u -s | tee ~/screenshots/$(date +%Y%m%d%H%M%S).png | xclip -selection clipboard -t image/png
+
+# Launch flameshot
+ctrl + shift + 9
     flameshot gui
 
 # Launch xcolor

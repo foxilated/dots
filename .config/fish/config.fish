@@ -21,11 +21,12 @@ if status is-interactive
   alias x='startx'
 
 	# alternatives
-	alias vi='nvim'
-	alias vim='nvim'
-	alias nano='nvim'
-  alias nnvim='sudo nvim'
-	alias code='code-oss'
+	alias v='nvim'
+	alias vim='v'
+	alias nano='v'
+  alias emacs='v'
+  alias vv='sudo nvim'
+	alias code='~/stuff/applications/code/code'
 
 	# utilities
 	alias myip='curl ipinfo.io/ip'
@@ -52,22 +53,8 @@ if status is-interactive
 	
 	# paths
   alias fishc="cd ~/.config/fish && nvim config.fish"
-	alias bmwc='cd ~/stuff/code/dwm && nvim config.h'
-	alias bmwp='cd ~/stuff/code/dwm && nvim patches.h'
-
-	alias slc='cd ~/stuff/code/slstatus && nvim config.h'
-	alias slp='cd ~/sutff/code/slstatus && nvim patches.h'
-
-	alias dmenuc='cd ~/stuff/code/dmenu && nvim config.h'
-	alias dmenup='cd ~/stuff/code/dmenu &&  nvim patches.h'
-
-	alias stc='cd ~/stuff/code/st && nvim config.h'
-	alias stp='cd ~/stuff/code/st && nvim patches.h'
-
-  alias slockc='cd ~/stuff/code/slock && nvim config.h'
-  alias slockp='cd ~/stuff/code/slock && nvim patches.h'
-
-	alias theme='nvim ~/stuff/noties/dracula.lua'
+	
+  alias theme='nvim ~/stuff/noties/dracula.lua'
 
   alias codef='cd ~/stuff/code/'
 
@@ -84,6 +71,10 @@ if status is-interactive
   alias sl='sl -100wdae'
 	alias yeetermeter='btop'
 	alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
+
+
+
+  export PATH="$HOME/pnpm-global/bin:$PATH"
 
 
 #   jump shell fish | source
@@ -107,3 +98,10 @@ end
 complete --command j --exclusive --arguments '(__jump_hint)'
 
 end
+
+# pnpm
+set -gx PNPM_HOME "/home/khaled/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
