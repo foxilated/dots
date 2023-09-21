@@ -1,4 +1,4 @@
-xwallpaper --zoom ~/stuff/constants/void-linux.png &
+xwallpaper --zoom ~/stuff/keep/gallery/wallpapers/wallhaven-zyo2xy.jpg &
 slstatus &
 picom &
 syncthing --no-browser --home ~/.syncthing &
