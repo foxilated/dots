@@ -6,8 +6,8 @@
 
 !stuff/
 stuff/*
-!stuff/constants/*
-!stuff/scripts/*
+!stuff/constants
+!stuff/scripts
 
 !.config/
 .config/*
