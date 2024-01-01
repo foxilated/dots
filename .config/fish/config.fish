@@ -26,7 +26,6 @@ if status is-interactive
 	alias nano='v'
   alias emacs='v'
   alias vv='sudo nvim'
-	alias code='~/stuff/applications/code/code'
 
 	# utilities
 	alias myip='curl ipinfo.io/ip'
@@ -36,12 +35,11 @@ if status is-interactive
 	alias nmtui='sudo nmtui'
 
 	# xbps
-	alias i='sudo xbps-install -S'
-	alias update='i; sudo xbps-install -u xbps; sudo xbps-install -u'
-	alias remove='sudo xbps-remove -R'
-  alias removeo='sudo xbps-remove -o'
-	alias search='sudo xbps-query -Rs'
-	alias searchl='sudo xbps-query -l'
+	alias i='paru -S'
+	alias update='paru'
+	alias remove='paru -R'
+  alias removeall='paru -Rcsn'
+	alias search='paru'
 		
 	# youtube-dl
 	alias get-audio='youtube-dl --extract-audio -f bestaudio '
@@ -54,15 +52,12 @@ if status is-interactive
 	# paths
   alias fishc="cd ~/.config/fish && nvim config.fish"
 	
-  alias theme='nvim ~/stuff/noties/dracula.lua'
-
   alias codef='cd ~/stuff/code/'
 
   alias sc='nvim ~/.config/sxhkd/sxhkdrc'
 
 	# funny
-	alias reyeet='sudo reboot'
-	alias gimme='sudo xbps-install -S'
+	alias reyeet='reboot'
 	alias obey='sudo'
 	alias obey_as_me='sudo -E'
 	alias say='yes'

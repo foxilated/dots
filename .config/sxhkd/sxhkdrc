@@ -16,6 +16,10 @@ ctrl + shift + b
 ctrl + shift + space
     dmenu_run
 
+# refreshing language switching
+ctrl + shift + l
+    setxkbmap -layout us,ara -option grp:shifts_toggle caps:escape_shifted_capslock
+
 # screenshot a region to clipboard
 ctrl + shift + plus
     mkdir -p ~/screenshots && maim -u -s | tee ~/screenshots/$(date +%Y%m%d%H%M%S).png | xclip -selection clipboard -t image/png
