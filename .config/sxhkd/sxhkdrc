@@ -3,6 +3,10 @@
 super + c
     ~/stuff/scripts/open-dir-in-code.sh
 
+# Clipboard
+super + v
+    clipmenu
+
 ## PROGRAMS ##
 # Launch st
 ctrl + shift + Return
@@ -30,7 +34,7 @@ ctrl + shift + 9
 
 # Launch xcolor
 ctrl + shift + minus
-    xcolor -s
+    xcolor -s | xclip -selection clipboard
 
 # Find Cursor
 ctrl + shift + 0

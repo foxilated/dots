@@ -31,9 +31,6 @@ if status is-interactive
 	alias myip='curl ipinfo.io/ip'
   alias oc='~/stuff/scripts/code.sh'
 
-	# networkmanager
-	alias nmtui='sudo nmtui'
-
 	# xbps
 	alias i='paru -S'
 	alias update='paru'
