@@ -3,6 +3,9 @@
 !.gitignore
 
 !.xinitrc
+!.bashrc
+!.bash_profile
+!.gtkrc-2.0
 
 !stuff/
 stuff/*
@@ -12,6 +15,16 @@ stuff/*
 !.config/
 .config/*
 
+!.local/
+.local/*
+!.local/share
+.local/share/*
+
+!.local/share/fish
+.local/share/fish/*
+!.local/share/fish/fish_history
+
+!.local/share/fonts
 !.config/btop
 !.config/sxhkd
 !.config/fish

@@ -12,7 +12,7 @@ selected_directory=$(echo "$directories" | dmenu)
 # Check if the selection is not empty
 if [ -n "$selected_directory" ]; then
     # Combine the directory path
-    selected_path="$directory/$selected_directory"
+    selected_path="$directory/$select ed_directory"
 
     # Open the selected directory in Visual Studio Code
     code "$selected_path"

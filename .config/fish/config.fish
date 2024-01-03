@@ -1,6 +1,7 @@
 #!/bin/sh
 if status is-interactive
-  set fish_greeting "Welcome, wanderer of shadows, to the depths of the void..."
+  set fish_greeting "Welcome to the Batcave, Master Wayne. How can I assist you today?"
+
 	# general
 	alias die="sudo shutdown -h now"
 	alias cp='cp -iv'
@@ -64,10 +65,7 @@ if status is-interactive
 	alias yeetermeter='btop'
 	alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
-
-
   export PATH="$HOME/pnpm-global/bin:$PATH"
-
 
 #   jump shell fish | source
 #
